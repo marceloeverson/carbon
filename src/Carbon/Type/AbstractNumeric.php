@@ -38,4 +38,8 @@ abstract class AbstractNumeric extends AbstractPrototype implements ParsableInte
     {
         return strval($this->value);
     }
+    public function getType()
+    {
+        return (is_int($this->value))? Type::INT_NUM : Type::FLOAT_NUM;
+    }
 }
