@@ -41,8 +41,5 @@ class Num extends AbstractNumeric
         }
         return  count($filtered) == count($values);
     }
-    public function getType()
-    {
-       return (is_int($this->value))? Type::INT_NUM : Type::FLOAT_NUM;
-    }
+
 }
